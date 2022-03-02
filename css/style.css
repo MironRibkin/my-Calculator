@@ -1,0 +1,144 @@
+html, body {
+    height: 100%
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    outline: none;
+}
+
+body {
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.calc_wrapper {
+    background: none;
+    display: flex;
+    /*align-items: flex-start;*/
+    /*justify-content: center;*/
+    width: 460px;
+    height: 200px;
+    border-radius: 30px;
+
+}
+
+.value-numbers {
+    border-top: 30px;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+    width: 447px;
+    height: 90px;
+    background: none;
+    color: whitesmoke;
+    font-size: 120px;
+    text-align: right;
+    padding: 130px 0 0 0;
+}
+
+.value-numbers::placeholder {
+    color: white;
+}
+
+.buttons-wrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas:
+            '. . . .'
+            '. . . .'
+            '. . . .'
+            '. . . .'
+            'zero zero . .';
+    grid-gap: 20px;
+    opacity: 0.9;
+
+}
+
+.buttons-wrapper > button {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: none;
+    font-size: 40px;
+}
+
+
+
+.zero {
+    grid-area: zero;
+    width: 100% !important;
+    border-radius: 80px !important;
+}
+
+.orange-color {
+    background-color: #F79303;
+    opacity: 0.9;
+    color: white;
+}
+
+.orange-color:active{
+    filter: brightness(1.15);
+}
+
+.orange-color:focus{
+    background-color: white;
+    color: #F79303;
+}
+
+.smooth{
+    background-color: #F79303;
+    opacity: 0.9;
+    color: white;
+}
+.smooth:active{
+    background-color: white;
+    color: #F79303;
+}
+
+.grey-color {
+    background-color: #4B4B4B;
+    color: white;
+    opacity: 0.9;
+}
+
+.grey-color:active{
+    filter: brightness(1.5);
+
+}
+.white-color:active{
+    filter: brightness(2);
+}
